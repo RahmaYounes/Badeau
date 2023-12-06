@@ -1,0 +1,40 @@
+package travail_perso;
+
+import bandeau.Bandeau;
+
+import java.awt.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Clignotant c = new Clignotant();
+
+        Couleur co = new Couleur();
+
+        Zoom z = new Zoom();
+
+        TourComplet tc = new TourComplet();
+
+        CaractereParCaractere cp = new CaractereParCaractere();
+
+        Bandeau monBandeau = new Bandeau();
+        Font font = monBandeau.getFont();
+        Color back = monBandeau.getBackground();
+        Color fore = monBandeau.getForeground();
+
+        //tc.excecuter(monBandeau);
+        //c.excecuter(monBandeau);
+        //co.excecuter(monBandeau);
+        //z.excecuter(monBandeau);
+        //cp.excecuter(monBandeau);
+
+        Scenario scenario = new Scenario();
+        scenario.ajouterEffet(c, 50);
+        scenario.excecuter();
+
+
+    }
+
+
+}
